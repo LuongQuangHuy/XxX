@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     
     var images: [UIImage] = []
     var strings: [String] = ["earth" , "india" , "moutain" , "robot" , "tf2" , "tree" , "fire" , "beach"]
+     var colors: [UIColor] = [UIColor.blue , UIColor.orange , UIColor.brown ,UIColor.lightGray , UIColor.purple , UIColor.green , UIColor.red, UIColor.link]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -51,7 +52,7 @@ class ViewController: UIViewController {
             let label = UILabel(frame: CGRect(x: width*CGFloat(i), y: height - 200, width: width, height: 50))
             label.text = arrString[i]
             label.textAlignment = .center
-            label.textColor = UIColor.red
+            label.textColor = colors[i]
             label.font = UIFont.systemFont(ofSize: 32)
             label.font = UIFont.italicSystemFont(ofSize: 32)
             imageView.contentMode = .scaleAspectFit
